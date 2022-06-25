@@ -50,6 +50,19 @@
      <string>Stop</string>
     </property>
    </widget>
+   <widget class="QCheckBox" name="careful_cb">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>20</y>
+      <width>70</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>careful</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -60,8 +73,40 @@
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menumain">
+    <property name="title">
+     <string>bot</string>
+    </property>
+    <widget class="QMenu" name="menufarm">
+     <property name="title">
+      <string>farm</string>
+     </property>
+     <addaction name="actionsand_farmer"/>
+    </widget>
+    <addaction name="menufarm"/>
+    <addaction name="separator"/>
+    <addaction name="actionb"/>
+    <addaction name="separator"/>
+    <addaction name="actionc"/>
+   </widget>
+   <addaction name="menumain"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionb">
+   <property name="text">
+    <string>fishing</string>
+   </property>
+  </action>
+  <action name="actionc">
+   <property name="text">
+    <string>c</string>
+   </property>
+  </action>
+  <action name="actionsand_farmer">
+   <property name="text">
+    <string>sand farmer</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
